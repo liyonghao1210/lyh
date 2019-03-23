@@ -1106,9 +1106,10 @@ body {
 .place {
   border-bottom: 1px solid #cacaca;
   overflow: hidden;
+  padding: 10px 0;
 }
 .place .breadcrumb {
-  background: url(../images/home.png) no-repeat left 13px;
+  background: url(../images/home.png) no-repeat left 5px;
   overflow: hidden;
   padding-bottom: 0;
   padding-left: 20px;
@@ -1138,7 +1139,7 @@ body {
   z-index: 99;
 }
 .sidebar .title {
-  background: #004998;
+  background: #c20b0b;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -1146,7 +1147,8 @@ body {
   margin: 0;
   color: #fff;
   height: 100px;
-  padding-top: 25px;
+  line-height: 100px;
+  /* padding-top: 25px; */
   font-size: 20px;
   font-weight: normal;
 }
@@ -1174,7 +1176,7 @@ body {
   color: #004998;
 }
 .portalhead li.active {
-  background: #91c3f9;
+  background: #c20b0b;
 }
 .portalhead li.active a {
   background: url(../images/jia.png) no-repeat 20px center;
@@ -1205,7 +1207,7 @@ body {
   overflow: hidden;
   margin-bottom: 25px;
   font-size: 18px;
-  border-bottom: 3px solid #004998;
+  border-bottom: 3px solid #c20b0b;
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -1260,7 +1262,33 @@ body {
   padding-top: 5px;
   color: #888;
   font-size: 14px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
+
+@-moz-document url-prefix(){
+  .nlist-pic li p{
+    position: relative; 
+    max-height: 74px;/*设置最大高度，加上overflowhidden，正好是两行，使超出部分隐藏*/
+    overflow: hidden;
+   }
+   .nlist-pic li p::after{
+    content: "..."; 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    padding-left: 40px; /* 以上三个属性，可以后续调整，看要把...放在哪个位置 */
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);/*背景色可写成渐变也可写成一样的颜色*/
+  }
+}
+
+
 .nlist-pic li a {
   background: url(../images/dot-h.jpg) no-repeat left center;
   padding-left: 15px;
@@ -1316,6 +1344,7 @@ body {
 .show-content .p-content {
   padding: 20px 0;
   margin: 10px 0;
+  text-align: center;
 }
 .show-content .p-content p {
   line-height: 30px;
@@ -1535,7 +1564,7 @@ body {
 	height: 42px;
 	background: #b20000 url(../images/zxrd.png)no-repeat center;
 }
-.title{
+.titles{
 	width: 784px;
 }
 .hx{
@@ -1635,8 +1664,13 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-
-
+.detailWrap img{
+  text-align: center;
+}
+.detailWrap p{
+  text-indent: 2em;
+  text-align: left;
+}
 
 
 

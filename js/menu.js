@@ -4,6 +4,10 @@
 		$(this).addClass("activeMenus").siblings().removeClass("activeMenus");
 	});
 
+  // 侧边栏导航切换
+  $(".portalhead li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  })
 
   //导航
   $(".sy1_ul .sy1_li").hover(
