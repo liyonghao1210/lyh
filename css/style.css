@@ -1179,7 +1179,7 @@ body {
   background: #c20b0b;
 }
 .portalhead li.active a {
-  background: url(../images/jia.png) no-repeat 20px center;
+  /* background: url(../images/jia.png) no-repeat 20px center; */
   color: #fff;
 }
 .portalhead li a:hover,
@@ -1231,7 +1231,7 @@ body {
   position: relative;
   overflow: hidden;
   background: url(../images/xx.jpg) repeat-x left bottom;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .nlist-pic li .p-img {
   float: left;
@@ -1290,8 +1290,13 @@ body {
 
 
 .nlist-pic li a {
+  display: inline-block;
   background: url(../images/dot-h.jpg) no-repeat left center;
   padding-left: 15px;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .nlist-pic li.first {
   padding: 20px 0;
@@ -1305,6 +1310,7 @@ body {
   top: 0;
   right: 5px;
   padding: 15px 0;
+  width: 10%;
 }
 /*图片列表*/
 .list-pic {

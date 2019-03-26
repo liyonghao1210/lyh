@@ -1,0 +1,81 @@
+.nlist-pic li span {
+    width: 13%;
+}
+.sidebar {
+    width: 400px;
+}
+.portalhead textarea {
+    width: 89%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.portalhead h4{
+    padding: 10px;
+}
+.btnSubmit{
+    padding: 3px 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #194a99;
+    border: 0;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.iptWrap{
+    text-align: right;
+}
+.msgTitle{
+    margin: 10px;
+}
+.msgTitle input{
+    width: 94%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.msgListWrap{
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 26px #ccc;
+    margin-bottom: 10px;
+}
+.msgHead{
+    line-height: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #b6b6b6;
+}
+.msgHead span{
+    color: #b6b6b6;
+    font-size: 12px;
+}
+.msgHead h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.msgListWrap p{
+    text-indent: 2em;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
