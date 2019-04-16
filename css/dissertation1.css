@@ -1,0 +1,76 @@
+.dissertationWrap{
+    border: 1px solid #E5E5E5;
+}
+.dissertationWrap li p{
+    text-align: center;
+}
+.dissertationWrap li h2{
+    padding: 0 0 15px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    color: #333333;
+    line-height: 175%;
+    border-bottom: 1px dotted #D3D0D1;
+    margin-top: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.dissertationWrap li h2 a {
+    color: #333;
+}
+.span5 {
+    width: 200px;
+    margin: 0px 9px;
+    padding-top: 20px;
+}
+p img{
+    width: 200px;
+}
+
+.dissertationWrap li font {
+    text-align: left;
+    font-size: 12px;
+    font-family: simsun;
+    color: #656565;
+    line-height: 175%;
+}
+.dissertationWrap li dl{
+    margin-bottom: 20px;
+}
+.dissertationWrap li dl dd  a {
+    color: #c20b0b;
+}
+.dissertationWrap li dl dt{
+    height: 67px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+
+
+  
+  @-moz-document url-prefix(){
+    .dissertationWrap li dl dt{
+      position: relative; 
+      max-height: 74px;/*设置最大高度，加上overflowhidden，正好是两行，使超出部分隐藏*/
+      overflow: hidden;
+     }
+     .dissertationWrap li dl dt::after{
+      content: "..."; 
+      position: absolute; 
+      bottom: 0; 
+      right: 0; 
+      padding-left: 40px; /* 以上三个属性，可以后续调整，看要把...放在哪个位置 */
+      background: -webkit-linear-gradient(left, transparent, #fff 55%);
+      background: -o-linear-gradient(right, transparent, #fff 55%);
+      background: -moz-linear-gradient(right, transparent, #fff 55%);
+      background: linear-gradient(to right, transparent, #fff 55%);/*背景色可写成渐变也可写成一样的颜色*/
+    }
+  }

@@ -1,0 +1,73 @@
+.dissertationList{
+    
+    /* height: 95px; */
+    overflow: hidden;
+}
+.dissertationWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dissertationWrap li{
+    width: 195px;
+    /* box-shadow: 0px 2px 26px #ccc; */
+    background: #f0f0f0;
+    padding: 10px;
+    margin: 0 5px 5px 0;
+}
+.dissertationWrap li:hover img{
+    -webkit-transform: scale(1.1);
+　　transform: scale(1.1);
+}
+
+.dissertationList img{
+    width: 195px;
+    display: block;
+    -webkit-transition: -webkit-transform 1s ease 0s;
+　　transition: transform 1s ease 0s;
+　　-webkit-transform-origin: center;
+　　transform-origin: center;
+}
+
+.dissertationList h3{
+    width: 185px;
+    height: 144px;
+    line-height: 24px;
+    padding: 5px;
+    background: #fff;
+    color: #888;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+
+@-moz-document url-prefix(){
+    .dissertationList h3{
+        position: relative; 
+        max-height: 147px;/*设置最大高度，加上overflowhidden，正好是两行，使超出部分隐藏*/
+        overflow: hidden;
+    }
+     .dissertationList h3::after{
+      content: "..."; 
+      position: absolute; 
+      bottom: 0; 
+      right: 0; 
+      padding-left: 40px; /* 以上三个属性，可以后续调整，看要把...放在哪个位置 */
+      background: -webkit-linear-gradient(left, transparent, #fff 55%);
+      background: -o-linear-gradient(right, transparent, #fff 55%);
+      background: -moz-linear-gradient(right, transparent, #fff 55%);
+      background: linear-gradient(to right, transparent, #fff 55%);/*背景色可写成渐变也可写成一样的颜色*/
+    }
+  }
+
+
+
+
+
+
+
+
+
+
